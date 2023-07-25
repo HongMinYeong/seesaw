@@ -1,0 +1,36 @@
+.title{
+    background-color: black;
+    color: white;
+
+}
+div{
+    height: 50px;
+}
+#red{
+    background-color: red;
+    width: 50px;
+}
+#orange{
+    background-color: orange;
+    width: 100px;
+}
+#yellow{
+    background-color: yellow;
+    width: 150px;
+}
+#green{
+    background-color: green;
+    width: 200px;
+}
+#blue{
+    background-color: blue;
+    width: 250px;
+}
+#navy{
+    background-color: navy;
+    width: 300px;
+}
+#violet{
+    background-color: violet;
+    width: 350px;
+}

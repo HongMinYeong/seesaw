@@ -1,0 +1,41 @@
+p.lion {
+    background-color: red;
+  }
+
+  /* 사파리 안의 사자만 선택 */
+  .zoo ul .lion {
+    background-color: greenyellow;
+  }
+
+  /* 호랑이 선택 */
+  #tiger {
+    background-color: yellow;
+  }
+
+  /* 모든 사자 선택 */
+  .lion {
+    color: sienna;
+  }
+
+  /* 동물원 안의 사자 선택 */
+  .zoo .lion {
+    font-weight: bold;
+  }
+  /* 호랑이 뒤에 있는 팬더 */
+.zoo #tiger +li{
+    background-color: skyblue;
+}
+
+
+  /* 사파리 사자 뒤에 있는 사육사를 모두 선택 */
+  .zoo li.lion ~ li {
+    background-color: orange;
+  }
+  /* >자식선택자는 자식만 선택가능하고 하위선택자는 자식도 하위로 치니까 하위선택자를 더 쓰는게 낫나? */
+
+  ul li{
+    background-color: red;
+  }
+  /* ul>li{
+    background-color: red;
+  } */

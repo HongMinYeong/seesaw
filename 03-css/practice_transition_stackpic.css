@@ -1,0 +1,23 @@
+img {
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  transform: skewY(30deg);
+}
+
+.img1 {
+  position: absolute;
+  left: 200px;
+  z-index: 3;
+}
+.img2 {
+  position: absolute;
+  left: 450px;
+  z-index: 2;
+}
+
+.img3 {
+  position: absolute;
+  left: 700px;
+  z-index: 1;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display 속성</title>
+    <style>
+      /* inline특성은 가진채로 block 형태가 됨 -> 개행처리 x */
+      .d-inline-block1 {
+        display: inline-block;
+        background-color: blue;
+      }
+      .d-inline-block2 {
+        display: inline-block;
+        background-color: red;
+        width: 200px;
+        height: 300px;
+        /* margin: 20px; */
+        /* CSS 단축 프로퍼티  */
+        /* margin-top: 20px; */
+        /* margin-bottom: 20px; */
+        /* margin-right: 40px; */
+        /* margin-left: 40px; */
+        /* margin: 20px 40px 20px 40px; */
+        margin: 20px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>inline-block</h2>
+    <ol>
+      <li>block 요소처럼 크기 지정을 하되</li>
+      <li>inline 요소처럼 다른 내용들과 같은 줄을 공유하고 싶은 경우</li>
+      <li>block과 inline 요소의 장점을 가짐</li>
+    </ol>
+    <div class="d-inline-block1">
+      d-inline-block1 클래스를 갖고 있는 div입니다.
+    </div>
+    <div class="d-inline-block2">d-inline-block2</div>
+  </body>
+</html>

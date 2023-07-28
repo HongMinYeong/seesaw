@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .div1 {
     width: 100px;
     height: 100px;
@@ -57,3 +58,50 @@ input:focus {
 .zoo > *:nth-child(2) {
     background-color: aqua;
 }
+=======
+.zoo h1:first-child {
+  color: red;
+}
+
+.fruits h3:last-child {
+  color: red;
+}
+
+.fruits *:nth-child(2) {
+  color: red;
+}
+
+.fruits *:not(span) {
+  color: red;
+}
+.stripes div:nth-child(2n) {
+  background-color: yellow;
+}
+.stripes div:nth-child(2n + 1) {
+  background-color: navy;
+}
+.box::before {
+  content: '택시~';
+  font-weight: bold;
+  color: red;
+}
+
+.box::after {
+  content: '빨리!!';
+  font-weight: bold;
+  color: blue !important;
+}
+
+[disabled] {
+  background-color: red;
+}
+
+[placeholder='이름'] {
+  background-color: orange;
+}
+
+input:not([placeholder]) {
+  background-color: blue;
+}
+
+>>>>>>> Stashed changes

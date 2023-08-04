@@ -65,7 +65,7 @@ for (let li of list) {
 // } else {
 //   h1.innerText = '히히히 add-1 클래스가 없지요 !';
 // }
-h1.classList.toggle('add-h1'); //있으면 제거, 없으면 추가
+// h1.classList.toggle('add-h1'); //있으면 제거, 없으면 추가
 
 //요소 찾기
 console.log('========요소 찾기 ========');
@@ -102,7 +102,7 @@ p.style.backgroundColor = 'red'; // <p style="font-weight: 700; background-color
 //x.append(y) : x요소의 맨 마지막 자식으로 y 요소가 추가
 //x.appendChild(y) :
 // container.append(p);
-
+console.log('======');
 div1.appendChild(p); //한번에 하나만 추가 가능
 
 const p2 = document.createElement('p');
@@ -124,7 +124,7 @@ li0.innerHTML = '<b>친구를 소개합니다. </b>';
 friends.prepend(li0);
 
 //요소 삭제
-//x.remove() : x 요소 삭제
+//x.remove() : x 요소삭제
 //x.removeChild(y) : x의 자식요소인 y가 삭제됨
 const firstli = document.querySelector('li');
 console.log(firstli); //친구들을 소개합니다 li 태그

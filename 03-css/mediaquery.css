@@ -1,0 +1,47 @@
+.header {
+  background-color: palegoldenrod;
+  height: 120px;
+}
+
+.main {
+  background-color: aqua;
+  display: flex;
+}
+.section {
+  background-color: cornflowerblue;
+  width: 80%;
+}
+
+.aside {
+  background-color: hotpink;
+  width: 20%;
+}
+
+.footer {
+  background-color: chartreuse;
+}
+/* 미디어 쿼리  */
+@media (max-width: 480px) {
+  /* viewport width가 480px 이하일 때 
+    이 안에있는 속성 적용하겠다.  -> breakpoint가 480? breakpoint뜻 
+    */
+  .header {
+    height: 60px;
+  }
+  .main {
+    flex-direction: column-reverse;
+  }
+}
+/* 가로 세로 모드  */
+/* Landscape(가로) 모드일 때 적용할 CSS */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: bisque;
+  }
+}
+/* portrait(세로) 모드일 때 적용할 css */
+@media screen and (orientation: portrait) {
+  body {
+    background-color: tomato;
+  }
+}

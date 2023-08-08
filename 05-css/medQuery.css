@@ -17,11 +17,13 @@
     background-color: none;
   }
 }
+/* height가 300미만 */
 @media (max-height: 300px) {
   p {
     font-style: italic;
   }
 }
+/* height 500이상 */
 @media (min-height: 500px) {
   p {
     background-color: green;

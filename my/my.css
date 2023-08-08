@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+.box-background {
+  /* 스크롤해야 하니까 크게  */
+  height: 3000px;
+  /* 가운데쯤나오게  */
+  margin-top: 300px;
+}
+
+.box img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.box {
+  position: sticky;
+  top: 300px;
+  /* background margin top이랑 일치시키기  */
+  margin-top: 300px;
+  transition: all 0.3s;
+}

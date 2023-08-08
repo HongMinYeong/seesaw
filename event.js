@@ -54,7 +54,7 @@ function changeColor() {
 btn4.addEventListener('click', changeBtnColor);
 function changeBtnColor() {
   console.log(this); //this -> 자기자신
-  //   console.log(this.parentNode); // this를 이용해 부모 접근
+  console.log(this.parentNode); // this를 이용해 부모 접근
   this.style.backgroundColor = 'yellow';
   this.style.color = '#000';
 }
@@ -63,9 +63,11 @@ const btn = document.querySelector('button');
 const input = document.querySelector('input');
 
 // [이벤트 객체]
-// 이벤트 발생 -> 브라우저는 발생한 이벤트에 대한 정보를 담은 "이벤트 객체(event object)"를 이벤트 리스터에 전달
+// 이벤트 발생 -> 브라우저는 발생한 이벤트에 대한 정보를 담은
+// "이벤트 객체(event object)"를 이벤트 리스터에 전달
 // ex. mousedown 이벤트 발생 -> 이벤트 객체는 (마우스 좌표, 버튼 번호) 정보를 가짐
-// ex. keydown 이벤트 발생 -> 이벤트 객체는 (키 코드값, 어떤 키가 눌렸는지에 대한 정보) 정보를 가짐
+// ex. keydown 이벤트 발생 -> 이벤트 객체는 (키 코드값, 어떤 키가 눌렸는지에 대한 정보)
+// 정보를 가짐
 // 키보드 이벤트
 btn.addEventListener('click', function (event) {
   //event 객체
@@ -115,8 +117,8 @@ todoForm.addEventListener('submit', (e) => {
 //change : input 요소에 변경이 일어나고, 다른 요소를 클릭해서
 //input 이 포커스 아웃(blur) 처리되었을 때 일어나는 이벤트
 const chgInput = document.querySelector('#change-input');
-chgInput.addEventListener('change', function (e) {
-  console.log('change!!!', e.target.value);
+chgInput.addEventListener('change', function () {
+  console.log('change!!!');
 });
 
 //input에 변경이 감지될때마다 이벤트

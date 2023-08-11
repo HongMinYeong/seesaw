@@ -6,7 +6,13 @@
     <title>ejs 연습하기</title>
   </head>
   <body>
+    <!-- <header>헤더</header> -->
+    <%- include('./includes/header')%>
+
     <h1>Hello ! Express!!!!연습하기이잉</h1>
     <!-- 여기서 JavaScript사용할때 <%%>이런 이상한거 써야됨  -->
+    <% for(let i = 0; i<4;i++){ %>
+    <h1>분신사바</h1>
+    <%}%>
   </body>
 </html>

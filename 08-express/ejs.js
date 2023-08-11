@@ -10,6 +10,7 @@ app.set('views', './views'); //템플릿 엔진 파일을 저장할 위치 등�
 app.get('/', (req, res) => {
   //'/':루트 주소의 서버주소는 -> 포트번호(localhost:8000)
   res.render('index'); //res.render(ejs_filename) : ejs_filename.ejs 파일을 찾아서 응답
+  //ejs 템플릿 렌더링
 });
 
 app.listen(PORT, () => {

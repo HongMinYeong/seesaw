@@ -16,3 +16,14 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
+
+//퀴즈
+//1. /login 경로로 요청이 들어오면 로그인 페이지(ejs)를 응답
+app.get('/login', function (req, res) {
+  res.render('login');
+});
+
+//2. /register 경로로 요청이 들어오면 회원가입 페이지(ejs)를 응답
+app.get('/register', function (req, res) {
+  res.render('register');
+});

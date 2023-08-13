@@ -35,3 +35,27 @@ app.get('/login', function (req, res) {
 app.get('/register', function (req, res) {
   res.render('register');
 });
+
+//(임시) 데이터베이스에서 가져온 회원 정보(id,pw)
+const idFromDB = 'banana';
+const pwFromDB = '1234qwer';
+
+//app.get(경로, 해당 경로로 들어왔을 때 실행할 함수 )
+//루트경로로 들어왔을때 함수 실행
+//'/' : 서버 주소 : 포트번호 (Localhost:8090/)
+app.get('/', function (req, res) {
+  //res.send(x) : x를 클라이언트한테 응답으로 보냄
+  //   res.send('<h1>@@@@Hello! Express!!!!@@@@</h1>');
+  ////////////////////////////////////////////////////////////////////////
+  //res.render(ejs_filename) : ejs file 이름을 찾아서 응답
+  res.render('index', {
+    userId: idFromDB,
+    userPw: pwFromDB,
+    btns: ['사과', '오렌지', '키위'],
+    me: {
+      name: 'minong',
+      msg: '저는 저입니다. 반갑습니다!!',
+    },
+    isLogin: false,
+  }); //index라는 ejs파일을 응답으로 보여줌
+});

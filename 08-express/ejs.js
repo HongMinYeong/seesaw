@@ -15,11 +15,6 @@ app.use('/views', express.static(__dirname + '/views'));
 app.use('/public', express.static(__dirname + '/static'));
 
 //app.get(경로, 해당 경로로 들어왔을 때 실행할 함수)
-app.get('/', (req, res) => {
-  //'/':루트 주소의 서버주소는 -> 포트번호(localhost:8000)
-  res.render('index'); //res.render(ejs_filename) : ejs_filename.ejs 파일을 찾아서 응답
-  //ejs 템플릿 렌더링
-});
 
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);

@@ -62,13 +62,13 @@ let product;
 let price;
 goMart();
 //resolve 값
-pickDrink()
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((result) => {
-    console.log(result);
-  });
+// pickDrink()
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((result) => {
+//     console.log(result);
+//   });
 
 //resolve면 pay함수 실행
 //reject 면 nopay 함수 실행

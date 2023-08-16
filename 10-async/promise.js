@@ -30,3 +30,53 @@ promise1(5 > 3)
   .catch((err) => {
     console.log(err);
   });
+
+//프로미스 예제 2
+function goMart() {
+  console.log('마트에 가서 어떤 음료를 살지 고민한다..');
+}
+
+function pickDrink(callback) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      console.log('고민 끝!');
+      product = '제로 콜라';
+      price = 5000;
+      if (price <= 2000) {
+        resolve(1);
+      } else {
+        reject(2);
+      }
+    }, 3000);
+  });
+}
+
+function pay() {
+  console.log(`상품명 : ${product}, 가격 : ${price} `);
+}
+
+function nopay() {
+  console.log('금액 부족 이잉');
+}
+let product;
+let price;
+goMart();
+//resolve 값
+pickDrink()
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((result) => {
+    console.log(result);
+  });
+
+//resolve면 pay함수 실행
+//reject 면 nopay 함수 실행
+// pickDrink().then(pay).catch(nopay);
+// == pickDrink()
+//   .then(function () {
+//     pay();
+//   })
+//   .catch(function () {
+//     nopay();
+//   });

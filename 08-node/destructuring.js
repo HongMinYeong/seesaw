@@ -10,13 +10,13 @@ const cookie = {
 // console.log(cookie.orange);
 
 //객체를 구조분해 해보장
-const { vanilla, orange, choco } = cookie; //키값 순서는 상관없당
+// const { vanilla, orange, choco } = cookie; //키값 순서는 상관없당
 
-// const { choco, vanilla, orange } = {
-//   choco: '초코맛 쿠키',
-//   vanilla: '바닐라맛 쿠키',
-//   orange: '오렌지맛 쿠키',
-// };
+const { choco, vanilla, orange } = {
+  choco: '초코맛 쿠키',
+  vanilla: '바닐라맛 쿠키',
+  orange: '오렌지맛 쿠키',
+};
 
 // //key값으로도 바로 접근 가능
 console.log(choco);

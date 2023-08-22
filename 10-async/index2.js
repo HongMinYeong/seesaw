@@ -40,7 +40,7 @@ function fetchFruits() {
   });
 }
 
-//1) promise then()메서드 사용
+// //1) promise then()메서드 사용
 // fetchFruits()
 //   .then(function (f) {
 //     console.log(f); //[ '사과', '레몬', '수박' ]

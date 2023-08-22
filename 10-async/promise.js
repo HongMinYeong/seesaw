@@ -72,15 +72,15 @@ goMart();
 
 //resolve면 pay함수 실행
 //reject 면 nopay 함수 실행
-// pickDrink().then(pay).catch(nopay);
-// == pickDrink()
-//   .then(function () {
-//     pay();
-//   })
-//   .catch(function () {
-//     nopay();
-//   });
-
+pickDrink().then(pay).catch(nopay);
+pickDrink()
+  .then(function () {
+    pay();
+  })
+  .catch(function () {
+    nopay();
+  });
+console.log('-------프로미스 체이닝 ---콜백함수처리--------');
 //3. 프로미스 체이닝(chaning)
 //  함수를 이용해(4+3) * 2 - 1 = 13 을 연산해보자!
 //sub(mul(add(4,3),2),1) : add -> mul -> sub
@@ -116,6 +116,7 @@ goMart();
 //   });
 // });
 
+console.log('-------프로미스 체이닝 ---promise처리--------');
 //case2. promise 로 처리
 function add(n1, n2) {
   return new Promise(function (resolve, reject) {

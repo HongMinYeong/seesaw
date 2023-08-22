@@ -1,3 +1,4 @@
+//콜백함수
 // function call(name, cb) {
 //   setTimeout(function () {
 //     console.log(name);

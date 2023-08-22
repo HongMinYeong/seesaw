@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: blue;
+        font-weight: 700;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1><%= title%></h1>
+    <div><span><%= Info.username%></span> 님@@ 반갑습니다~</div>
+    <div><span><%= Info.gender%></span> 분이시군요!</div>
+    <div>
+      <span
+        ><%= Info.birthYear%>년<%= Info.birthMonth%>월 <%= Info.birthDay%>에 태어나셨군요</span
+      >
+    </div>
+    <% if(Info.hobby){ %>
+    <div>관심사는 없으시군요!</div>
+    <% }else{%>
+      <div>관심사는 <span><%= Info.hobby%></span> 이시군요!<%}%>
+       <% if(Info.num==''){ %>
+    <div>좋아하는 숫자는 없으시군요</div>
+    <% } else{%>
+      <div>좋아하는 숫자는 <span><%= Info.num%></span> 이시군요!
+    <%}%>
+    좋아하는 색은 <div style=" width: 100px; height: 100px; background-color: <%= Info.color %>"></div>이시군요!
+
+  </body>
+</html>

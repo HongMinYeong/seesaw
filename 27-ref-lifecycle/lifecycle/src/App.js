@@ -1,5 +1,6 @@
 import LifeCycleClass from './LifeCycleClass';
 import LifeCycleFunc from './LifeCycleFunc';
+import PostList from './PostList';
 import logo from './logo.svg';
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
       <LifeCycleFunc />
       <hr />
       <LifeCycleClass />
+      <hr />
+      <PostList />
     </div>
   );
 }

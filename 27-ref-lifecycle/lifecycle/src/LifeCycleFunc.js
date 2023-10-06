@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import LifeCycleFuncChild from './LifeCycleFuncChild';
 
 export default function LifeCycleFunc() {
-  const [number, setNumber] = useState(0); //1
+  const [number, setNumber] = useState(0);
+  const [visible, setVisible] = useState(true);
   const changeNumber = () => {
-    //2
     setNumber(number + 1);
+  };
+  const changeVisible = () => {
+    setVisible(!visible);
   };
   return (
     <div>
-      {/* 3 */}
       <button onClick={changeNumber}>Plus</button>
-      {/* 4 */}
-      <LifeCycleFuncChild number={number} />
+      <button onClick={changeVisible}>On/Off</button>
+
+      {visible && <LifeCycleFuncChild number={number} />}
     </div>
   );
 }

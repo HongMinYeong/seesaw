@@ -1,6 +1,6 @@
 //useCallback
 // - 매번 함수를 생성하지 않고, 함수를 기억해두었다가 필요할 때마다 함수를 재사용
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 
 export default function UseCallbackEx() {
   const [text, setText] = useState('');
@@ -8,9 +8,15 @@ export default function UseCallbackEx() {
   // text 상태가 업데이트 되면 - 컴포넌트 리렌더링 = 코드를 다시 읽음
   // = onChangeText 함수도 다시 생성 (js func는 object type이라 주소값이 변경)
   // => 불필요한 작업!
-  const onChangeText = (e) => {
+  //   const onChangeText = (e) => {
+  //     setText(e.target.value);
+  //   }
+
+  //[after]
+  //컴포넌트가 리렌더링 되어도, 의존성 배열에 있는 값이 바뀌지 않는 한 기존 함수를 계속 사용
+  const onChangeText = useCallback((e) => {
     setText(e.target.value);
-  };
+  }, []);
   return (
     <div>
       <h1>UseCallbackEx</h1>
